@@ -1,0 +1,27 @@
+<h1>Prineiro teste em Ruby on Rails</h1><br>
+
+<h2>1) Acessar valores do Controler</h2>
+<h1><%= 'Nome: ' + @nome %></h1>
+<h1>Números: <%= @numeros %></h1><br>
+
+<h2>2) Percorrer cada número do Array do Controller</h2>
+<% for num in @numeros %>
+    <%= num %><br>
+<% end %>
+
+<h2>3) Acessar uma função do Helper</h2>
+<h3>Multiplos de 4:<h3>
+<%= multiplos(4)%><br>
+
+<%= 'Renato Rineiro da Silva' %>
+
+<h2>4) Acessar os atributos do Model pelo Controller</h2>
+<%# Mostra endereçõ de memória %>
+<%= @p %><br>
+<%# Mostra o nome passado no Controller %>
+<%= @p.nome %><br>
+<%# Mostra o age passado no Controller %>
+<%= @p.age %>
+
+<br>
+<p>Find me in app/views/people/index.html.erb</p>
