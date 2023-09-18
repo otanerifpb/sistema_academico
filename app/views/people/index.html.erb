@@ -18,10 +18,10 @@
 <h2>4) Acessar os atributos do Model pelo Controller</h2>
 <%# Mostra endereçõ de memória %>
 <%= @p %><br>
-<%# Mostra o nome passado no Controller %>
-<%= @p.nome %><br>
-<%# Mostra o age passado no Controller %>
-<%= @p.age %>
+<%# Mostra o nome passado no Controller (String aceita concatenação)%>
+<%= "Nome: " + @p.nome %><br>
+<%# Mostra o age passado no Controller (Integer não aceita concatenação)%>
+<%= 'Idade: '%><%= @p.age %>
 
 <br>
 <p>Find me in app/views/people/index.html.erb</p>
